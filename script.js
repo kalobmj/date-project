@@ -35,8 +35,6 @@ function fixDay(day) {
     return fixedDay
 } // end fixDay func
 
-// vvv number in hidden got updated, now need to figure out what future date will be vvv
-
 calculateButton.addEventListener('click', () => {
     
     if (userInput.value === '' || (userInput.value < 1 || userInput.value > 1000)) {
@@ -69,5 +67,4 @@ userInput.addEventListener('keydown', e => {
         userInput.value = ''
     } // end if statement 
 }); // func for when user presses enter key
-
 
