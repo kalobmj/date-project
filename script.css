@@ -34,8 +34,11 @@ input[type=number] {
 }
 
 input:valid {
-    border: solid green 2px;
+    border: solid green 4px;
 }
+
+input[type=number]:focus {
+    border: 3px solid grey;
 
 .current-date {
     background-color: grey;
