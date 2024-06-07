@@ -52,7 +52,7 @@ input[type=number] {
 }
 
 input:valid {
-    border: solid green 2px;
+    border: solid green 4px;
 }
 
 input[type=number]:focus {
