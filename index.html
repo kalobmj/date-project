@@ -1,1 +1,34 @@
-
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="index.css">
+      <title>Date From Days Project</title>
+    </head>
+    <body>
+      <main class="container">
+          <img 
+            class="calendar"
+            src="https://cdn-icons-png.flaticon.com/512/10691/10691802.png"
+            alt="calendar logo" 
+          />
+          <h1 class="title" id="main-title">Date Calculator</h1>
+          <h2>Today's date is: </h2>
+          <div class="current-date" id="curr-date">
+            <p id="curr-date-p"></p> <!-- this is a placeholder for date -->
+          </div>
+          <div class="days-div">
+          <h3>How many days do you want to calculate from today?</h3>
+          <input class="ammount-input" id="days-input" value="" type="number" placeholder="max: 1000" min="1" max="1000" required />
+          <button class="ammount-btn" id="calculate-btn">Calculate!</button>
+          </div>
+          <div class="calculated-date hidden" id="calc-date">
+            <label>The date <span class="ammount-input" id="result-input"></span> days from today is...</label> <!-- this is a placeholder for calculated date -->
+            <p id="future-date">September 13, 2024</p> <!-- this is a placeholder for calculated date -->
+          </div>
+      </main>
+      <script src="index.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    </body>
+  </html>
