@@ -1,1 +1,78 @@
 
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.calendar {
+    height: 130px;
+}
+
+h3 {
+    vertical-align: middle;
+    text-align: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+    width: 75px;
+}
+
+.ammount-input {
+    text-align: center;
+}
+
+input:valid {
+    border: solid green 2px;
+}
+
+.current-date {
+    background-color: grey;
+    min-height: 50px;
+    border-radius: 20px;
+    width: min(100vw, 300px);
+    align-items: center;
+    text-align: cetner;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+}
+
+.calculated-date {
+    background-color: grey;
+    min-height: 50px;
+    border-radius: 20px;
+    width: min(100vw, 300px);
+    align-items: center;
+    text-align: cetner;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin: auto;
+    flex-direction: column;
+}
+
+.days-div {
+    padding-bottom: 20px
+}
+
+.hidden {
+    display: none;
+}
