@@ -1,22 +1,40 @@
 
-html, body {
-    margin: 0;
-    padding: 0;
+* {
+    margin: 0 auto;
+    padding: 0 auto;
+    box-sizing: border-box;
 }
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
-    padding-bottom: 20px;
+    background: linear-gradient(#ED8DF2, #28BEF2)
 }
 
 .calendar {
-    height: 130px;
+    height: 150px;
+    padding-bottom: 10px
+}
+
+h1 {
+    padding-bottom: 10px;
+    color: #252726;
+}
+
+h2 {
+    padding-bottom: 15px;
+    color: #252726;
 }
 
 h3 {
     vertical-align: middle;
     text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    max-width: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    color: #252726;
 }
 
 input::-webkit-outer-spin-button,
@@ -26,7 +44,7 @@ input::-webkit-inner-spin-button {
 }
 
 input[type=number] {
-    width: 75px;
+    width: 85px;
 }
 
 .ammount-input {
@@ -34,14 +52,14 @@ input[type=number] {
 }
 
 input:valid {
-    border: solid green 4px;
+    border: solid green 2px;
 }
 
 input[type=number]:focus {
-    border: 3px solid grey;
-
+    border: 3px solid gray;
+}
 .current-date {
-    background-color: grey;
+    background: linear-gradient(#FF9DEE, #FD64B4);
     min-height: 50px;
     border-radius: 20px;
     width: min(100vw, 300px);
@@ -49,17 +67,20 @@ input[type=number]:focus {
     text-align: cetner;
     display: flex;
     justify-content: center;
-    margin: auto;
 }
 
 .container {
     width: 100%;
     min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 .calculated-date {
-    background-color: grey;
+    background: linear-gradient(#FF9DEE, #FD64B4);
     min-height: 50px;
     border-radius: 20px;
     width: min(100vw, 300px);
@@ -68,7 +89,6 @@ input[type=number]:focus {
     display: flex;
     justify-content: center;
     padding: 20px;
-    margin: auto;
     flex-direction: column;
 }
 
@@ -78,4 +98,14 @@ input[type=number]:focus {
 
 .hidden {
     display: none;
+}
+
+span[id="result-input"] {
+    font-weight: bold;
+}
+
+p[id="future-date"] {
+    padding-top: 15px;
+    font-size: 16px;
+    font-weight: bold;
 }
