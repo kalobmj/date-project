@@ -33,7 +33,7 @@ function fixDay(day) {
             fixedDay = day + 'th'
     } // end switch
     return fixedDay
-} // end fixDay func
+} // end fixDay func test
 
 calculateButton.addEventListener('click', () => {
     
@@ -66,5 +66,5 @@ userInput.addEventListener('keydown', e => {
         calculatedDate.classList.remove("hidden")
         userInput.value = ''
     } // end if statement 
-}); // func for when user presses enter key
+}); // func for when user presses enter key 
 
